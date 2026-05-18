@@ -47,7 +47,7 @@ public class AuthMenu {
 
     private boolean showLogin() {
         System.out.println("\n── ĐĂNG NHẬP ──────────────────────");
-        String email = InputUtil.readLine("  Email / SĐT: ");
+        String email    = InputUtil.readLine("  Email / SĐT: ");
         String password = InputUtil.readPassword("  Mật khẩu: ");
 
         try {

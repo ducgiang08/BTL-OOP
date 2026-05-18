@@ -15,7 +15,7 @@ public class DatabaseConnection {
     private static final String PORT     = "1433";
     private static final String DATABASE = "ECommerceDB";
     private static final String USERNAME = "sa";
-    private static final String PASSWORD = "123456"; // ← đổi theo máy
+    private static final String PASSWORD = "YourPassword123!"; // ← đổi theo máy
 
     private static final String URL =
         "jdbc:sqlserver://" + SERVER + ":" + PORT

@@ -27,9 +27,9 @@ public class AuthService {
      * @throws SQLException lỗi DB
      */
     public User login(String credential, String password) throws SQLException {
-        if (credential == null || credential.isBlank() || password == null || password.isBlank())
+        if (credential == null || credential.isBlank() || password == null || password.isBlank()) {
             throw new IllegalArgumentException("Thông tin đăng nhập không được để trống.");
-
+        }
         String hash = PasswordUtil.hash(password);
         User user = userDAO.findByCredentialAndPassword(credential.trim(), hash);
         if (user == null) return null;
